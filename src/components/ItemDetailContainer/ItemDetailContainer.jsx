@@ -1,4 +1,7 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card';
+import ItemQuantitySelector from '../ItemQuantitySelector/ItemQuantitySelector';
+import AddItemButton from '../AddItemButton/AddItemButton';
 
 
 const ItemDetailContainer = ({ product }) => {
@@ -13,6 +16,8 @@ const ItemDetailContainer = ({ product }) => {
                  <Card.Title>{product.title}</Card.Title>
                  <Card.Text> {product.description}</Card.Text>
              </Card.Body>
+             <ItemQuantitySelector />
+             
              </Card>
       </div>
     )
